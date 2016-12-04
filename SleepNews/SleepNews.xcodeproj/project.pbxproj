@@ -23,6 +23,8 @@
 		D397D4E01DF4196100654798 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = D397D4DF1DF4196100654798 /* NSString+Extension.m */; };
 		D397D4E31DF419A200654798 /* UIBarButtonItem+gyh.m in Sources */ = {isa = PBXBuildFile; fileRef = D397D4E21DF419A200654798 /* UIBarButtonItem+gyh.m */; };
 		D397D4F91DF41C9700654798 /* SCNavTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = D397D4F81DF41C9700654798 /* SCNavTabBarController.m */; };
+		D397D4FC1DF428F600654798 /* BaseSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D397D4FB1DF428F600654798 /* BaseSettingViewController.m */; };
+		D397D5021DF4297100654798 /* ThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D397D5011DF4297100654798 /* ThemeManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +60,10 @@
 		D397D4E21DF419A200654798 /* UIBarButtonItem+gyh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+gyh.m"; sourceTree = SOURCE_ROOT; };
 		D397D4F71DF41C9700654798 /* SCNavTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCNavTabBarController.h; path = SleepNews/Class/Main/SCNavTabBarController.h; sourceTree = SOURCE_ROOT; };
 		D397D4F81DF41C9700654798 /* SCNavTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCNavTabBarController.m; path = SleepNews/Class/Main/SCNavTabBarController.m; sourceTree = SOURCE_ROOT; };
+		D397D4FA1DF428F600654798 /* BaseSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseSettingViewController.h; path = SleepNews/Class/Main/BaseSettingViewController.h; sourceTree = SOURCE_ROOT; };
+		D397D4FB1DF428F600654798 /* BaseSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseSettingViewController.m; path = SleepNews/Class/Main/BaseSettingViewController.m; sourceTree = SOURCE_ROOT; };
+		D397D5001DF4297100654798 /* ThemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ThemeManager.h; path = SleepNews/Class/Main/ThemeManager.h; sourceTree = SOURCE_ROOT; };
+		D397D5011DF4297100654798 /* ThemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ThemeManager.m; path = SleepNews/Class/Main/ThemeManager.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,6 +241,10 @@
 		D397D4E41DF41AC500654798 /* 主题 */ = {
 			isa = PBXGroup;
 			children = (
+				D397D4FA1DF428F600654798 /* BaseSettingViewController.h */,
+				D397D4FB1DF428F600654798 /* BaseSettingViewController.m */,
+				D397D5001DF4297100654798 /* ThemeManager.h */,
+				D397D5011DF4297100654798 /* ThemeManager.m */,
 			);
 			name = "主题";
 			path = "../../../../../../Developer/DayDayNews-master/新闻/CustomTools/主题";
@@ -317,11 +327,13 @@
 				D397D4C11DF4137A00654798 /* NavigationController.m in Sources */,
 				D397D4D01DF4156800654798 /* TabbarView.m in Sources */,
 				D397D4C71DF4148200654798 /* PhotoViewController.m in Sources */,
+				D397D5021DF4297100654798 /* ThemeManager.m in Sources */,
 				D397D4CA1DF414A100654798 /* VideoViewController.m in Sources */,
 				D397D4E01DF4196100654798 /* NSString+Extension.m in Sources */,
 				D309EC0C1DF3BAA900E781F1 /* main.m in Sources */,
 				D397D4DD1DF4191200654798 /* UIColor+Extension.m in Sources */,
 				D397D4CD1DF414DE00654798 /* MeViewController.m in Sources */,
+				D397D4FC1DF428F600654798 /* BaseSettingViewController.m in Sources */,
 				D32836171DF3D9700009F98B /* TabbarViewController.m in Sources */,
 				D397D4D41DF415A700654798 /* TabbarButton.m in Sources */,
 			);

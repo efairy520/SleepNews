@@ -1,5 +1,5 @@
 //
-//  MeViewController.h
+//  BaseSettingViewController.h
 //  SleepNews
 //
 //  Created by Kavee DJ on 2016/12/4.
@@ -7,8 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BaseSettingViewController.h"
 
-@interface MeViewController : BaseSettingViewController
-
+@interface BaseSettingViewController : UIViewController
+-(void)configUIAppearce;
 @end

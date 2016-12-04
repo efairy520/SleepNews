@@ -12,18 +12,49 @@
 		D309EC111DF3BAA900E781F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D309EC101DF3BAA900E781F1 /* Assets.xcassets */; };
 		D309EC141DF3BAA900E781F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D309EC121DF3BAA900E781F1 /* LaunchScreen.storyboard */; };
 		D32836171DF3D9700009F98B /* TabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D32836161DF3D9700009F98B /* TabbarViewController.m */; };
+		D397D4C11DF4137A00654798 /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D397D4C01DF4137A00654798 /* NavigationController.m */; };
+		D397D4C41DF413B000654798 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D397D4C31DF413B000654798 /* BaseViewController.m */; };
+		D397D4C71DF4148200654798 /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D397D4C61DF4148200654798 /* PhotoViewController.m */; };
+		D397D4CA1DF414A100654798 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D397D4C91DF414A100654798 /* VideoViewController.m */; };
+		D397D4CD1DF414DE00654798 /* MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D397D4CC1DF414DE00654798 /* MeViewController.m */; };
+		D397D4D01DF4156800654798 /* TabbarView.m in Sources */ = {isa = PBXBuildFile; fileRef = D397D4CF1DF4156800654798 /* TabbarView.m */; };
+		D397D4D41DF415A700654798 /* TabbarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D397D4D31DF415A700654798 /* TabbarButton.m */; };
+		D397D4DD1DF4191200654798 /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = D397D4DC1DF4191200654798 /* UIColor+Extension.m */; };
+		D397D4E01DF4196100654798 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = D397D4DF1DF4196100654798 /* NSString+Extension.m */; };
+		D397D4E31DF419A200654798 /* UIBarButtonItem+gyh.m in Sources */ = {isa = PBXBuildFile; fileRef = D397D4E21DF419A200654798 /* UIBarButtonItem+gyh.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D309EC071DF3BAA800E781F1 /* SleepNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SleepNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D309EC0B1DF3BAA900E781F1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D309EC0D1DF3BAA900E781F1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		D309EC0E1DF3BAA900E781F1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D309EC0D1DF3BAA900E781F1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../AppDelegate.h; sourceTree = "<group>"; };
+		D309EC0E1DF3BAA900E781F1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../../AppDelegate.m; sourceTree = "<group>"; };
 		D309EC101DF3BAA900E781F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D309EC131DF3BAA900E781F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D309EC151DF3BAA900E781F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D32836151DF3D9700009F98B /* TabbarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabbarViewController.h; sourceTree = "<group>"; };
 		D32836161DF3D9700009F98B /* TabbarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabbarViewController.m; sourceTree = "<group>"; };
+		D397D4BE1DF4110100654798 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = SOURCE_ROOT; };
+		D397D4BF1DF4137A00654798 /* NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationController.h; sourceTree = "<group>"; };
+		D397D4C01DF4137A00654798 /* NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationController.m; sourceTree = "<group>"; };
+		D397D4C21DF413B000654798 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		D397D4C31DF413B000654798 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		D397D4C51DF4148200654798 /* PhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhotoViewController.h; path = SleepNews/Class/Main/PhotoViewController.h; sourceTree = SOURCE_ROOT; };
+		D397D4C61DF4148200654798 /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PhotoViewController.m; path = SleepNews/Class/Main/PhotoViewController.m; sourceTree = SOURCE_ROOT; };
+		D397D4C81DF414A100654798 /* VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VideoViewController.h; path = SleepNews/Class/Main/VideoViewController.h; sourceTree = SOURCE_ROOT; };
+		D397D4C91DF414A100654798 /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VideoViewController.m; path = SleepNews/Class/Main/VideoViewController.m; sourceTree = SOURCE_ROOT; };
+		D397D4CB1DF414DE00654798 /* MeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MeViewController.h; path = SleepNews/Class/Main/MeViewController.h; sourceTree = SOURCE_ROOT; };
+		D397D4CC1DF414DE00654798 /* MeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MeViewController.m; path = SleepNews/Class/Main/MeViewController.m; sourceTree = SOURCE_ROOT; };
+		D397D4CE1DF4156800654798 /* TabbarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabbarView.h; sourceTree = "<group>"; };
+		D397D4CF1DF4156800654798 /* TabbarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabbarView.m; sourceTree = "<group>"; };
+		D397D4D21DF415A700654798 /* TabbarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabbarButton.h; sourceTree = "<group>"; };
+		D397D4D31DF415A700654798 /* TabbarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabbarButton.m; sourceTree = "<group>"; };
+		D397D4DB1DF4191200654798 /* UIColor+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extension.h"; sourceTree = SOURCE_ROOT; };
+		D397D4DC1DF4191200654798 /* UIColor+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extension.m"; sourceTree = SOURCE_ROOT; };
+		D397D4DE1DF4196100654798 /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = SOURCE_ROOT; };
+		D397D4DF1DF4196100654798 /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = SOURCE_ROOT; };
+		D397D4E11DF419A200654798 /* UIBarButtonItem+gyh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+gyh.h"; sourceTree = SOURCE_ROOT; };
+		D397D4E21DF419A200654798 /* UIBarButtonItem+gyh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+gyh.m"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +88,6 @@
 			isa = PBXGroup;
 			children = (
 				D328360C1DF3D9020009F98B /* Class */,
-				D309EC0D1DF3BAA900E781F1 /* AppDelegate.h */,
-				D309EC0E1DF3BAA900E781F1 /* AppDelegate.m */,
 				D309EC101DF3BAA900E781F1 /* Assets.xcassets */,
 				D309EC121DF3BAA900E781F1 /* LaunchScreen.storyboard */,
 				D309EC151DF3BAA900E781F1 /* Info.plist */,
@@ -81,11 +110,11 @@
 				D328360D1DF3D9020009F98B /* CustomTools */,
 				D328360E1DF3D9020009F98B /* Lib */,
 				D328360F1DF3D9020009F98B /* Main */,
-				D32836101DF3D9020009F98B /* Mine */,
+				D32836101DF3D9020009F98B /* Me */,
 				D32836111DF3D9020009F98B /* News */,
-				D32836121DF3D9020009F98B /* Picture */,
-				D32836131DF3D9020009F98B /* Supports */,
 				D32836141DF3D9020009F98B /* Video */,
+				D32836121DF3D9020009F98B /* Photo */,
+				D32836131DF3D9020009F98B /* Supports */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -93,6 +122,7 @@
 		D328360D1DF3D9020009F98B /* CustomTools */ = {
 			isa = PBXGroup;
 			children = (
+				D397D4DA1DF418A000654798 /* Category */,
 			);
 			path = CustomTools;
 			sourceTree = "<group>";
@@ -107,16 +137,27 @@
 		D328360F1DF3D9020009F98B /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				D309EC0D1DF3BAA900E781F1 /* AppDelegate.h */,
+				D309EC0E1DF3BAA900E781F1 /* AppDelegate.m */,
+				D397D4BF1DF4137A00654798 /* NavigationController.h */,
+				D397D4C01DF4137A00654798 /* NavigationController.m */,
 				D32836151DF3D9700009F98B /* TabbarViewController.h */,
 				D32836161DF3D9700009F98B /* TabbarViewController.m */,
+				D397D4C21DF413B000654798 /* BaseViewController.h */,
+				D397D4C31DF413B000654798 /* BaseViewController.m */,
+				D397D4D61DF415B700654798 /* Model */,
+				D397D4D11DF4157000654798 /* View */,
 			);
 			path = Main;
 			sourceTree = "<group>";
 		};
-		D32836101DF3D9020009F98B /* Mine */ = {
+		D32836101DF3D9020009F98B /* Me */ = {
 			isa = PBXGroup;
 			children = (
+				D397D4CB1DF414DE00654798 /* MeViewController.h */,
+				D397D4CC1DF414DE00654798 /* MeViewController.m */,
 			);
+			name = Me;
 			path = Mine;
 			sourceTree = "<group>";
 		};
@@ -127,16 +168,20 @@
 			path = News;
 			sourceTree = "<group>";
 		};
-		D32836121DF3D9020009F98B /* Picture */ = {
+		D32836121DF3D9020009F98B /* Photo */ = {
 			isa = PBXGroup;
 			children = (
+				D397D4C51DF4148200654798 /* PhotoViewController.h */,
+				D397D4C61DF4148200654798 /* PhotoViewController.m */,
 			);
+			name = Photo;
 			path = Picture;
 			sourceTree = "<group>";
 		};
 		D32836131DF3D9020009F98B /* Supports */ = {
 			isa = PBXGroup;
 			children = (
+				D397D4BE1DF4110100654798 /* PrefixHeader.pch */,
 			);
 			path = Supports;
 			sourceTree = "<group>";
@@ -144,8 +189,41 @@
 		D32836141DF3D9020009F98B /* Video */ = {
 			isa = PBXGroup;
 			children = (
+				D397D4C81DF414A100654798 /* VideoViewController.h */,
+				D397D4C91DF414A100654798 /* VideoViewController.m */,
 			);
 			path = Video;
+			sourceTree = "<group>";
+		};
+		D397D4D11DF4157000654798 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D397D4CE1DF4156800654798 /* TabbarView.h */,
+				D397D4CF1DF4156800654798 /* TabbarView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		D397D4D61DF415B700654798 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D397D4D21DF415A700654798 /* TabbarButton.h */,
+				D397D4D31DF415A700654798 /* TabbarButton.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		D397D4DA1DF418A000654798 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				D397D4E11DF419A200654798 /* UIBarButtonItem+gyh.h */,
+				D397D4E21DF419A200654798 /* UIBarButtonItem+gyh.m */,
+				D397D4DE1DF4196100654798 /* NSString+Extension.h */,
+				D397D4DF1DF4196100654798 /* NSString+Extension.m */,
+				D397D4DB1DF4191200654798 /* UIColor+Extension.h */,
+				D397D4DC1DF4191200654798 /* UIColor+Extension.m */,
+			);
+			name = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,8 +297,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				D309EC0F1DF3BAA900E781F1 /* AppDelegate.m in Sources */,
+				D397D4C41DF413B000654798 /* BaseViewController.m in Sources */,
+				D397D4E31DF419A200654798 /* UIBarButtonItem+gyh.m in Sources */,
+				D397D4C11DF4137A00654798 /* NavigationController.m in Sources */,
+				D397D4D01DF4156800654798 /* TabbarView.m in Sources */,
+				D397D4C71DF4148200654798 /* PhotoViewController.m in Sources */,
+				D397D4CA1DF414A100654798 /* VideoViewController.m in Sources */,
+				D397D4E01DF4196100654798 /* NSString+Extension.m in Sources */,
 				D309EC0C1DF3BAA900E781F1 /* main.m in Sources */,
+				D397D4DD1DF4191200654798 /* UIColor+Extension.m in Sources */,
+				D397D4CD1DF414DE00654798 /* MeViewController.m in Sources */,
 				D32836171DF3D9700009F98B /* TabbarViewController.m in Sources */,
+				D397D4D41DF415A700654798 /* TabbarButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,8 +413,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREFIX_HEADER = /Users/Julia2009/Documents/GithubClone/SleepNews/SleepNews/PrefixHeader.pch;
 				INFOPLIST_FILE = SleepNews/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kavee.SleepNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -338,8 +428,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREFIX_HEADER = /Users/Julia2009/Documents/GithubClone/SleepNews/SleepNews/PrefixHeader.pch;
 				INFOPLIST_FILE = SleepNews/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kavee.SleepNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";

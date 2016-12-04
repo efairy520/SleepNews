@@ -7,8 +7,16 @@
 //
 
 #import "TabbarViewController.h"
+#import "NavigationController.h"
+#import "PhotoViewController.h"
+#import "VideoViewController.h"
+#import "MeViewController.h"
+
+#import "TabbarView.h"
 
 @interface TabbarViewController ()
+
+@property (nonatomic, strong) TabbarView *tabbar;
 
 @end
 
@@ -16,22 +24,73 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    [self initTabbar];
+    
+    [self initControl];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    for (UIView *child in self.tabBar.subviews) {
+        if([child isKindOfClass:[UIControl class]])
+        {
+            [child removeFromSuperview];
+        }
+    }
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)selectIndex:(int)index
+{
+    [self.tabbar selectIndex:index];
 }
-*/
+
+-(void)initTabbar
+{
+    IMP_BLOCK_SELF(TabbarViewController);
+    TabbarView *tabbar = [[TabbarView alloc]init];
+    tabbar.frame = self.tabBar.bounds;
+    tabbar.btnSelectBlock = ^(int to){
+        block_self.selectedIndex = to;
+    };
+    [self.tabBar addSubview:tabbar];
+    self.tabbar = tabbar;
+    
+//    [self handleThemeChanged];
+}
+
+- (void)initControl
+{
+//    SCNavTabBarController  *new = [[SCNavTabBarController alloc]init];
+//    [self setupChildViewController:new title:@"新闻" imageName:@"tabbar_news" selectedImage:@"tabbar_news_hl"];
+    
+    PhotoViewController *photo = [[PhotoViewController alloc]init];
+    [self setupChildViewController:photo title:@"图片" imageName:@"tabbar_picture" selectedImage:@"tabbar_picture_hl"];
+    
+    VideoViewController *video = [[VideoViewController alloc]init];
+    [self setupChildViewController:video title:@"视频" imageName:@"tabbar_video" selectedImage:@"tabbar_video_hl"];
+    
+    MeViewController *me = [[MeViewController alloc]init];
+    [self setupChildViewController:me title:@"我的" imageName:@"tabbar_setting" selectedImage:@"tabbar_setting_hl"];
+    
+}
+
+-(void)setupChildViewController:(UIViewController *)childVc title:(NSString *)title imageName:(NSString *)imageName selectedImage:(NSString *)selectedImage
+{
+    
+    //设置控制器属性
+    childVc.title = title;
+    childVc.tabBarItem.image = [UIImage imageNamed:imageName];
+    childVc.tabBarItem.selectedImage = [[UIImage imageNamed:selectedImage]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    
+    //包装一个导航控制器
+    NavigationController *nav = [[NavigationController alloc]initWithRootViewController:childVc];
+    [self addChildViewController:nav];
+    
+    [self.tabbar addTabBarButtonWithItem:childVc.tabBarItem];
+}
+
 
 @end

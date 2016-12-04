@@ -22,6 +22,7 @@
 		D397D4DD1DF4191200654798 /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = D397D4DC1DF4191200654798 /* UIColor+Extension.m */; };
 		D397D4E01DF4196100654798 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = D397D4DF1DF4196100654798 /* NSString+Extension.m */; };
 		D397D4E31DF419A200654798 /* UIBarButtonItem+gyh.m in Sources */ = {isa = PBXBuildFile; fileRef = D397D4E21DF419A200654798 /* UIBarButtonItem+gyh.m */; };
+		D397D4F91DF41C9700654798 /* SCNavTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = D397D4F81DF41C9700654798 /* SCNavTabBarController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,8 @@
 		D397D4DF1DF4196100654798 /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = SOURCE_ROOT; };
 		D397D4E11DF419A200654798 /* UIBarButtonItem+gyh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+gyh.h"; sourceTree = SOURCE_ROOT; };
 		D397D4E21DF419A200654798 /* UIBarButtonItem+gyh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+gyh.m"; sourceTree = SOURCE_ROOT; };
+		D397D4F71DF41C9700654798 /* SCNavTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCNavTabBarController.h; path = SleepNews/Class/Main/SCNavTabBarController.h; sourceTree = SOURCE_ROOT; };
+		D397D4F81DF41C9700654798 /* SCNavTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCNavTabBarController.m; path = SleepNews/Class/Main/SCNavTabBarController.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +125,7 @@
 		D328360D1DF3D9020009F98B /* CustomTools */ = {
 			isa = PBXGroup;
 			children = (
+				D397D4E41DF41AC500654798 /* 主题 */,
 				D397D4DA1DF418A000654798 /* Category */,
 			);
 			path = CustomTools;
@@ -164,6 +168,8 @@
 		D32836111DF3D9020009F98B /* News */ = {
 			isa = PBXGroup;
 			children = (
+				D397D4F71DF41C9700654798 /* SCNavTabBarController.h */,
+				D397D4F81DF41C9700654798 /* SCNavTabBarController.m */,
 			);
 			path = News;
 			sourceTree = "<group>";
@@ -224,6 +230,14 @@
 				D397D4DC1DF4191200654798 /* UIColor+Extension.m */,
 			);
 			name = Category;
+			sourceTree = "<group>";
+		};
+		D397D4E41DF41AC500654798 /* 主题 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "主题";
+			path = "../../../../../../Developer/DayDayNews-master/新闻/CustomTools/主题";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,6 +313,7 @@
 				D309EC0F1DF3BAA900E781F1 /* AppDelegate.m in Sources */,
 				D397D4C41DF413B000654798 /* BaseViewController.m in Sources */,
 				D397D4E31DF419A200654798 /* UIBarButtonItem+gyh.m in Sources */,
+				D397D4F91DF41C9700654798 /* SCNavTabBarController.m in Sources */,
 				D397D4C11DF4137A00654798 /* NavigationController.m in Sources */,
 				D397D4D01DF4156800654798 /* TabbarView.m in Sources */,
 				D397D4C71DF4148200654798 /* PhotoViewController.m in Sources */,

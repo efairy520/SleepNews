@@ -11,7 +11,7 @@
 #import "PhotoViewController.h"
 #import "VideoViewController.h"
 #import "MeViewController.h"
-
+#import "SCNavTabBarController.h"
 #import "TabbarView.h"
 
 @interface TabbarViewController ()
@@ -63,8 +63,8 @@
 
 - (void)initControl
 {
-//    SCNavTabBarController  *new = [[SCNavTabBarController alloc]init];
-//    [self setupChildViewController:new title:@"新闻" imageName:@"tabbar_news" selectedImage:@"tabbar_news_hl"];
+    SCNavTabBarController  *new = [[SCNavTabBarController alloc]init];
+    [self setupChildViewController:new title:@"新闻" imageName:@"tabbar_news" selectedImage:@"tabbar_news_hl"];
     
     PhotoViewController *photo = [[PhotoViewController alloc]init];
     [self setupChildViewController:photo title:@"图片" imageName:@"tabbar_picture" selectedImage:@"tabbar_picture_hl"];

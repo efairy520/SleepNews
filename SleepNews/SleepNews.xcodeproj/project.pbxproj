@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A819AC026A3E592DCB5C4405 /* libPods-SleepNews.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 384A9E9E24D65494BCC5DF91 /* libPods-SleepNews.a */; };
 		D309EC0C1DF3BAA900E781F1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D309EC0B1DF3BAA900E781F1 /* main.m */; };
 		D309EC111DF3BAA900E781F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D309EC101DF3BAA900E781F1 /* Assets.xcassets */; };
 		D309EC141DF3BAA900E781F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D309EC121DF3BAA900E781F1 /* LaunchScreen.storyboard */; };
@@ -28,6 +29,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		384A9E9E24D65494BCC5DF91 /* libPods-SleepNews.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SleepNews.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		484B7B554202D1B0550C1847 /* Pods-SleepNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SleepNews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SleepNews/Pods-SleepNews.debug.xcconfig"; sourceTree = "<group>"; };
+		A4AE1272616C2EBBCD9CB4FE /* Pods-SleepNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SleepNews.release.xcconfig"; path = "Pods/Target Support Files/Pods-SleepNews/Pods-SleepNews.release.xcconfig"; sourceTree = "<group>"; };
 		D309EC071DF3BAA800E781F1 /* SleepNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SleepNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D309EC0B1DF3BAA900E781F1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D309EC101DF3BAA900E781F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -71,17 +75,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A819AC026A3E592DCB5C4405 /* libPods-SleepNews.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7D1EFB3EF0DA46603B8C310A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				484B7B554202D1B0550C1847 /* Pods-SleepNews.debug.xcconfig */,
+				A4AE1272616C2EBBCD9CB4FE /* Pods-SleepNews.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C79488D0A4D9621B7A8E932C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				384A9E9E24D65494BCC5DF91 /* libPods-SleepNews.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D309EBFE1DF3BAA800E781F1 = {
 			isa = PBXGroup;
 			children = (
 				D309EC091DF3BAA800E781F1 /* SleepNews */,
 				D309EC081DF3BAA800E781F1 /* Products */,
+				7D1EFB3EF0DA46603B8C310A /* Pods */,
+				C79488D0A4D9621B7A8E932C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -406,9 +430,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D309EC181DF3BAA900E781F1 /* Build configuration list for PBXNativeTarget "SleepNews" */;
 			buildPhases = (
+				5102A5A2189AB72CBBD3CCD7 /* [CP] Check Pods Manifest.lock */,
 				D309EC031DF3BAA800E781F1 /* Sources */,
 				D309EC041DF3BAA800E781F1 /* Frameworks */,
 				D309EC051DF3BAA800E781F1 /* Resources */,
+				9CC96C5E749C28F8195BC56F /* [CP] Embed Pods Frameworks */,
+				5F921C2784B297BE05181E8F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -463,6 +490,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5102A5A2189AB72CBBD3CCD7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5F921C2784B297BE05181E8F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SleepNews/Pods-SleepNews-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9CC96C5E749C28F8195BC56F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SleepNews/Pods-SleepNews-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D309EC031DF3BAA800E781F1 /* Sources */ = {
@@ -586,6 +661,7 @@
 		};
 		D309EC191DF3BAA900E781F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 484B7B554202D1B0550C1847 /* Pods-SleepNews.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
@@ -612,6 +688,7 @@
 		};
 		D309EC1A1DF3BAA900E781F1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4AE1272616C2EBBCD9CB4FE /* Pods-SleepNews.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";

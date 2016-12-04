@@ -11,6 +11,7 @@
 		D309EC0F1DF3BAA900E781F1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D309EC0E1DF3BAA900E781F1 /* AppDelegate.m */; };
 		D309EC111DF3BAA900E781F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D309EC101DF3BAA900E781F1 /* Assets.xcassets */; };
 		D309EC141DF3BAA900E781F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D309EC121DF3BAA900E781F1 /* LaunchScreen.storyboard */; };
+		D32836171DF3D9700009F98B /* TabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D32836161DF3D9700009F98B /* TabbarViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,8 @@
 		D309EC101DF3BAA900E781F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D309EC131DF3BAA900E781F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D309EC151DF3BAA900E781F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D32836151DF3D9700009F98B /* TabbarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabbarViewController.h; sourceTree = "<group>"; };
+		D32836161DF3D9700009F98B /* TabbarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabbarViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +56,7 @@
 		D309EC091DF3BAA800E781F1 /* SleepNews */ = {
 			isa = PBXGroup;
 			children = (
+				D328360C1DF3D9020009F98B /* Class */,
 				D309EC0D1DF3BAA900E781F1 /* AppDelegate.h */,
 				D309EC0E1DF3BAA900E781F1 /* AppDelegate.m */,
 				D309EC101DF3BAA900E781F1 /* Assets.xcassets */,
@@ -69,6 +73,79 @@
 				D309EC0B1DF3BAA900E781F1 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D328360C1DF3D9020009F98B /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				D328360D1DF3D9020009F98B /* CustomTools */,
+				D328360E1DF3D9020009F98B /* Lib */,
+				D328360F1DF3D9020009F98B /* Main */,
+				D32836101DF3D9020009F98B /* Mine */,
+				D32836111DF3D9020009F98B /* News */,
+				D32836121DF3D9020009F98B /* Picture */,
+				D32836131DF3D9020009F98B /* Supports */,
+				D32836141DF3D9020009F98B /* Video */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		D328360D1DF3D9020009F98B /* CustomTools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomTools;
+			sourceTree = "<group>";
+		};
+		D328360E1DF3D9020009F98B /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		D328360F1DF3D9020009F98B /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				D32836151DF3D9700009F98B /* TabbarViewController.h */,
+				D32836161DF3D9700009F98B /* TabbarViewController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		D32836101DF3D9020009F98B /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		D32836111DF3D9020009F98B /* News */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		D32836121DF3D9020009F98B /* Picture */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Picture;
+			sourceTree = "<group>";
+		};
+		D32836131DF3D9020009F98B /* Supports */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Supports;
+			sourceTree = "<group>";
+		};
+		D32836141DF3D9020009F98B /* Video */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Video;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +220,7 @@
 			files = (
 				D309EC0F1DF3BAA900E781F1 /* AppDelegate.m in Sources */,
 				D309EC0C1DF3BAA900E781F1 /* main.m in Sources */,
+				D32836171DF3D9700009F98B /* TabbarViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +365,7 @@
 				D309EC1A1DF3BAA900E781F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

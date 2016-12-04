@@ -8,9 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		A819AC026A3E592DCB5C4405 /* libPods-SleepNews.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 384A9E9E24D65494BCC5DF91 /* libPods-SleepNews.a */; };
+		D30633321DF4336B00929542 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = D30633311DF4336B00929542 /* UIView+Frame.m */; };
 		D309EC0C1DF3BAA900E781F1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D309EC0B1DF3BAA900E781F1 /* main.m */; };
 		D309EC111DF3BAA900E781F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D309EC101DF3BAA900E781F1 /* Assets.xcassets */; };
 		D309EC141DF3BAA900E781F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D309EC121DF3BAA900E781F1 /* LaunchScreen.storyboard */; };
+		D324698D1DF4421B00DA2919 /* SettingHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = D324698C1DF4421B00DA2919 /* SettingHeaderView.m */; };
+		D32469901DF446F600DA2919 /* SettingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D324698F1DF446F600DA2919 /* SettingItem.m */; };
+		D32469951DF4473000DA2919 /* SettingLabelItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D32469921DF4473000DA2919 /* SettingLabelItem.m */; };
+		D32469961DF4473000DA2919 /* SettingSwitchItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D32469941DF4473000DA2919 /* SettingSwitchItem.m */; };
+		D32469991DF4474000DA2919 /* SettingArrowItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D32469981DF4474000DA2919 /* SettingArrowItem.m */; };
+		D324699C1DF4474A00DA2919 /* SettingGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = D324699B1DF4474A00DA2919 /* SettingGroup.m */; };
+		D324699F1DF447A900DA2919 /* CollectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D324699E1DF447A900DA2919 /* CollectViewController.m */; };
 		D397D7951DF42ED700654798 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = D397D75A1DF42ED700654798 /* NSString+Extension.m */; };
 		D397D7961DF42ED700654798 /* UIBarButtonItem+gyh.m in Sources */ = {isa = PBXBuildFile; fileRef = D397D75C1DF42ED700654798 /* UIBarButtonItem+gyh.m */; };
 		D397D7971DF42ED700654798 /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = D397D75E1DF42ED700654798 /* UIColor+Extension.m */; };
@@ -32,11 +40,27 @@
 		384A9E9E24D65494BCC5DF91 /* libPods-SleepNews.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SleepNews.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		484B7B554202D1B0550C1847 /* Pods-SleepNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SleepNews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SleepNews/Pods-SleepNews.debug.xcconfig"; sourceTree = "<group>"; };
 		A4AE1272616C2EBBCD9CB4FE /* Pods-SleepNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SleepNews.release.xcconfig"; path = "Pods/Target Support Files/Pods-SleepNews/Pods-SleepNews.release.xcconfig"; sourceTree = "<group>"; };
+		D30633301DF4336B00929542 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		D30633311DF4336B00929542 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		D309EC071DF3BAA800E781F1 /* SleepNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SleepNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D309EC0B1DF3BAA900E781F1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D309EC101DF3BAA900E781F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D309EC131DF3BAA900E781F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D309EC151DF3BAA900E781F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D324698B1DF4421B00DA2919 /* SettingHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingHeaderView.h; sourceTree = "<group>"; };
+		D324698C1DF4421B00DA2919 /* SettingHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingHeaderView.m; sourceTree = "<group>"; };
+		D324698E1DF446F600DA2919 /* SettingItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingItem.h; sourceTree = "<group>"; };
+		D324698F1DF446F600DA2919 /* SettingItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingItem.m; sourceTree = "<group>"; };
+		D32469911DF4473000DA2919 /* SettingLabelItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingLabelItem.h; sourceTree = "<group>"; };
+		D32469921DF4473000DA2919 /* SettingLabelItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingLabelItem.m; sourceTree = "<group>"; };
+		D32469931DF4473000DA2919 /* SettingSwitchItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingSwitchItem.h; sourceTree = "<group>"; };
+		D32469941DF4473000DA2919 /* SettingSwitchItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingSwitchItem.m; sourceTree = "<group>"; };
+		D32469971DF4474000DA2919 /* SettingArrowItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingArrowItem.h; sourceTree = "<group>"; };
+		D32469981DF4474000DA2919 /* SettingArrowItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingArrowItem.m; sourceTree = "<group>"; };
+		D324699A1DF4474A00DA2919 /* SettingGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingGroup.h; sourceTree = "<group>"; };
+		D324699B1DF4474A00DA2919 /* SettingGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingGroup.m; sourceTree = "<group>"; };
+		D324699D1DF447A900DA2919 /* CollectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectViewController.h; sourceTree = "<group>"; };
+		D324699E1DF447A900DA2919 /* CollectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectViewController.m; sourceTree = "<group>"; };
 		D397D7591DF42ED700654798 /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
 		D397D75A1DF42ED700654798 /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
 		D397D75B1DF42ED700654798 /* UIBarButtonItem+gyh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+gyh.h"; sourceTree = "<group>"; };
@@ -97,6 +121,13 @@
 				384A9E9E24D65494BCC5DF91 /* libPods-SleepNews.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D30633081DF4326000929542 /* 聊天 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "聊天";
 			sourceTree = "<group>";
 		};
 		D309EBFE1DF3BAA800E781F1 = {
@@ -165,6 +196,8 @@
 		D397D7581DF42ED700654798 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				D30633301DF4336B00929542 /* UIView+Frame.h */,
+				D30633311DF4336B00929542 /* UIView+Frame.m */,
 				D397D7591DF42ED700654798 /* NSString+Extension.h */,
 				D397D75A1DF42ED700654798 /* NSString+Extension.m */,
 				D397D75B1DF42ED700654798 /* UIBarButtonItem+gyh.h */,
@@ -258,6 +291,8 @@
 			children = (
 				D397D7781DF42ED700654798 /* MeViewController.h */,
 				D397D7791DF42ED700654798 /* MeViewController.m */,
+				D324699D1DF447A900DA2919 /* CollectViewController.h */,
+				D324699E1DF447A900DA2919 /* CollectViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -265,6 +300,16 @@
 		D397D77A1DF42ED700654798 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D32469971DF4474000DA2919 /* SettingArrowItem.h */,
+				D32469981DF4474000DA2919 /* SettingArrowItem.m */,
+				D32469911DF4473000DA2919 /* SettingLabelItem.h */,
+				D32469921DF4473000DA2919 /* SettingLabelItem.m */,
+				D32469931DF4473000DA2919 /* SettingSwitchItem.h */,
+				D32469941DF4473000DA2919 /* SettingSwitchItem.m */,
+				D324698E1DF446F600DA2919 /* SettingItem.h */,
+				D324698F1DF446F600DA2919 /* SettingItem.m */,
+				D324699A1DF4474A00DA2919 /* SettingGroup.h */,
+				D324699B1DF4474A00DA2919 /* SettingGroup.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -272,6 +317,9 @@
 		D397D77B1DF42ED700654798 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D30633081DF4326000929542 /* 聊天 */,
+				D324698B1DF4421B00DA2919 /* SettingHeaderView.h */,
+				D324698C1DF4421B00DA2919 /* SettingHeaderView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -546,13 +594,21 @@
 			files = (
 				D397D79D1DF42ED700654798 /* TabbarViewController.m in Sources */,
 				D309EC0C1DF3BAA900E781F1 /* main.m in Sources */,
+				D30633321DF4336B00929542 /* UIView+Frame.m in Sources */,
+				D32469991DF4474000DA2919 /* SettingArrowItem.m in Sources */,
 				D397D79B1DF42ED700654798 /* BaseViewController.m in Sources */,
 				D397D7A11DF42ED700654798 /* SCNavTabBarController.m in Sources */,
 				D397D79E1DF42ED700654798 /* TabbarButton.m in Sources */,
+				D324699F1DF447A900DA2919 /* CollectViewController.m in Sources */,
+				D32469961DF4473000DA2919 /* SettingSwitchItem.m in Sources */,
+				D32469951DF4473000DA2919 /* SettingLabelItem.m in Sources */,
 				D397D7961DF42ED700654798 /* UIBarButtonItem+gyh.m in Sources */,
 				D397D7A31DF42ED700654798 /* VideoViewController.m in Sources */,
 				D397D79C1DF42ED700654798 /* NavigationController.m in Sources */,
+				D32469901DF446F600DA2919 /* SettingItem.m in Sources */,
 				D397D79F1DF42ED700654798 /* TabbarView.m in Sources */,
+				D324699C1DF4474A00DA2919 /* SettingGroup.m in Sources */,
+				D324698D1DF4421B00DA2919 /* SettingHeaderView.m in Sources */,
 				D397D7981DF42ED700654798 /* BaseSettingViewController.m in Sources */,
 				D397D7A21DF42ED700654798 /* PhotoViewController.m in Sources */,
 				D397D7951DF42ED700654798 /* NSString+Extension.m in Sources */,

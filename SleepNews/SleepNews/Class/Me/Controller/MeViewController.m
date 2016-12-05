@@ -9,20 +9,14 @@
 #import "MeViewController.h"
 #import <SDWebImage/SDImageCache.h>
 #import "SettingHeaderView.h"
-#import "SettingItem.h"
-#import "SettingArrowItem.h"
-#import "CollectViewController.h"
-#import "SettingSwitchItem.h"
-#import "SettingGroup.h"
 
-@interface MeViewController ()
+
+@interface MeViewController ()<UITableViewDataSource,UITableViewDelegate>
 
 /** 头部视图 */
 @property (nonatomic, weak) UIView *headerView;
 /** 表格视图 */
 @property (nonatomic, weak) UITableView *tableView;
-@property (nonatomic , copy) NSString * chatCount;     //未读消息数目
-@property (nonatomic , strong) NSMutableArray *arrays;
 
 @end
 
@@ -46,34 +40,49 @@
     
     self.tableView.backgroundColor = [[ThemeManager sharedInstance] themeColor];
     
+//    [self loadConversations];
+    
+    // 设置第0组
     [self setupGroup0];
-    [self setupGroup2];
+
 }
 
 - (void)setupGroup0 {
-    SettingItem *shouCang = [SettingArrowItem itemWithItem:@"MorePush" title:@"收藏" VcClass:[CollectViewController class]];
-    SettingItem *handShake = [SettingSwitchItem itemWithItem:@"handShake" title:@"夜间模式"];
     
-    SettingGroup *group0 = [[SettingGroup alloc] init];
-    
-    group0.items = @[shouCang, handShake];
-     [self.arrays addObject:group0];
-
 }
 
-- (void)setupGroup2 {
-}
 
 #pragma mark - tableview代理数据源方法
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return self.arrays.count;
+    return 3;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    SettingGroup *group = self.arrays[section];
-    return group.items.count;
+    return 3;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    // 1.确定重用标示：
+    static NSString *ID = @"abs";
+    
+    // 2.从缓存池中取
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
+    
+    // 3.如果空就手动创建
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
+    }
+    
+    cell.textLabel.text = @"OOXX";
+    
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
 }
 
 

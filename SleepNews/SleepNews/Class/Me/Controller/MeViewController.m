@@ -16,6 +16,9 @@
 #import "SettingArrowItem.h"
 #import "SettingSwitchItem.h"
 
+
+#import "ShareManager.h"
+
 @interface MeViewController ()<UITableViewDataSource,UITableViewDelegate>
 
 /** 头部视图 */
@@ -103,13 +106,19 @@
     IMP_BLOCK_SELF(MeViewController);
     
     SettingItem *moreHelp = [SettingLabelItem itemWithItem:@"MoreHelp" title:@"帮助与反馈"];
-    SettingItem *moreShare = [SettingLabelItem itemWithItem:@"MoreShare" title:@"分享给好友"];
+    
+    SettingItem *moreShare = [SettingArrowItem itemWithItem:@"MoreShare" title:@"分享给好友" VcClass:nil];
+    moreShare.optionHandler = ^{
+        [[ShareManager sharedInstance] shareWeiboWithTitle:nil images:nil dismissBlock:^{
+            [block_self.navigationController popViewControllerAnimated:YES];
+        }];
+    };
+    
     
     SettingItem *handShake = [SettingArrowItem itemWithItem:@"handShake" title:@"清除缓存" subtitle:self.clearCacheName];
     handShake.optionHandler = ^{
         [block_self click];
     };
-    
     
     SettingItem *MoreAbout = [SettingArrowItem itemWithItem:@"MoreAbout" title:@"关于" VcClass:nil];
     MoreAbout.optionHandler = ^{
